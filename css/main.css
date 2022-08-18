@@ -1,0 +1,701 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+/*My entire website background color*/
+.pageColor{
+    background: #FBF7F5; 
+}
+
+/*Fonts*/
+body {
+    font-family: 'Nunito', sans-serif;
+    padding-top: 3rem;
+}
+
+header{
+    display: block;
+}
+
+/*Nav Bar*/
+
+
+/*Home intro*/
+.bg-image{
+    background-image: url('../img/lines.png');
+    background-position: center;
+    background-position-y: 0;
+    background-size:cover;
+    min-height: 60vh;
+    background-repeat: no-repeat;
+}
+
+.about{
+    padding-top: 6rem;
+}
+
+h1{
+    font-size: 4rem;
+}
+
+.introPspace{
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
+.homeSpace{
+    margin: 3rem;
+}
+
+.introPspace2{
+    padding-bottom: 1rem;
+    padding-top: 1.5rem;
+}
+
+/*Home Bio My name and skills in different colours*/
+.myname {
+    color: black;
+    background-color: #B07DAD;
+    border-radius: 0.1rem;
+    text-decoration: none;
+    font-size: 2.5rem;
+    padding: 0.2rem 0.5rem;
+    transition: 0.3s;
+}
+  
+.myname:hover {
+    background-color: transparent;
+    color: #B07DAD;
+	font-size: 4rem;
+    transition: 0.5s;
+}
+
+.myname1 {
+    display: inline-block;
+    position: relative;
+    color: #A8A9C8;
+    transition: 0.3s;
+}
+
+.myname1:hover {
+    color:#A8A9C8;
+    background-color: transparent;
+    font-size: 2rem;
+    transition: 0.5s;
+}
+  
+.myname1:after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+}
+
+.myname1:hover:after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+    background-color: #A8A9C8;
+  }
+
+.myname2 {
+    display: inline-block;
+    position: relative;
+    color: #CDB9D5;
+    transition: 0.3s;
+}
+
+.myname2:hover {
+    color:#CDB9D5;
+    background-color: transparent;
+    font-size: 2rem;
+    transition: 0.5s;
+}
+
+.myname2:after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+}
+
+.myname2:hover:after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+    background-color: #CDB9D5;
+}
+
+.myname3 {
+    display: inline-block;
+    position: relative;
+    color: #C2D5E4;
+    transition: 0.3s;
+}
+  
+.myname3:hover {
+    color:#C2D5E4;
+    background-color: transparent;
+    font-size: 2rem;
+    transition: 0.5s;
+}
+
+.myname3:after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+}
+
+.myname3:hover:after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+    background-color: #C2D5E4;
+}
+/*Home Bio Animation ENDS here*/
+
+.color-overlay{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+@media (max-width: 47.5rem){
+    .bg-image{
+        min-height: 50vh;
+    }
+    h1{
+        font-size: calc(1.525rem+3.3vw);
+    }
+}
+
+/*Home bio Button*/
+.custom-btn {
+    color: black;
+    font-weight: bold;
+    border-radius: 10rem;
+    border-width: medium;
+    border-color: #7085A2;
+    border-style: solid;
+    padding: 0.8rem 1rem;
+    font-size: 1rem;
+    line-height: normal;
+    overflow: hidden;
+    text-decoration: none;
+    transition: 0.5s;
+}
+
+.custom-btn:hover {
+    color: black;
+    border-color: #B07DAD;
+    background: #E7D4E7;
+    transition: 0.5s;
+}
+
+/*Home Resume button will have space of 1 rem at 1920px/16=120rem*/
+@media (max-width: 120rem){
+    .custom-btn-group {
+        padding-top: 0.5rem;
+    }
+}
+
+
+/*Home showcase*/
+.flexrow{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5rem;
+}
+
+/*Home: Project Showcase css*/
+.section {
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+}
+
+.Portrow{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/*For Bye-nary css*/
+.portfolio-figure{
+    background-color: #FBF7F5;
+    color: #101010;
+    margin-top: 5rem;
+    margin-bottom: 4rem;
+    border-radius: 2rem;
+    border: 0.2rem solid;
+    padding: 2rem;
+    box-shadow: 1rem -1rem 0px 0px #a8a9c8;
+    transition-duration: 0.3s;
+}
+
+.portfolio-figure:hover{
+    background-color: #FBF7F5;
+    color: #101010;
+    margin-top: 5rem;
+    margin-bottom: 4rem;
+    border-radius: 2rem;
+    border: 0.2rem solid;
+    padding: 2rem;
+    box-shadow: 1rem -1rem 0px 0px #474993;
+    transition-duration: 0.5;
+}
+
+.plinks{
+    display: flex;
+    text-decoration: none;
+    color: black;
+}
+
+.plinks:hover{
+    color: black;
+}
+
+.figTitle{
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+    padding-top: 3rem;
+}
+
+.byeTag{
+    color: white;
+    background-color: #A8A9C8;
+    font-weight: 700;
+    border-radius: 0.1rem;
+    padding: 0.3rem 1rem;
+    margin-top: 1rem;
+}
+
+/*For ChuChu css*/
+.portfolio-figure2{
+    background-color: #FBF7F5;
+    color: #101010;
+    margin-top: 5rem;
+    margin-bottom: 4rem;
+    border-radius: 2rem;
+    border: 0.2rem solid;
+    padding: 2rem;
+    box-shadow: -1rem -1rem 0px 0px #FEE7E1;
+    transition-duration: 0.3s;
+}
+
+.portfolio-figure2:hover{
+    background-color: #FBF7F5;
+    color: #101010;
+    margin-top: 5rem;
+    margin-bottom: 4rem;
+    border-radius: 2rem;
+    border: 0.2rem solid;
+    padding: 2rem;
+    box-shadow: -1rem -1rem 0px 0px #FBD1D3;
+    transition-duration: 0.5s;
+}
+
+.chuTag{
+    color: white;
+    background-color: #FFC342;
+    font-weight: 700;
+    border-radius: 0.1rem;
+    padding: 0.3rem 1rem;
+    margin-top: 1rem;
+}
+
+
+    
+/*Bye-Nary: Project css STARTS HERE*/
+.bye-opening{
+    background-image: url('../img/bye_star_bg.svg');
+    background-position: center;
+    background-position-y: 0;
+    background-size:cover;
+    min-height: 60vh;
+    background-repeat: no-repeat;
+}
+
+.centerVid{
+    text-align: center;
+}
+
+.planet1{
+    padding: 3rem;
+}
+
+.custom-btn1 {
+    color: white;
+    background: #A8A9C8;
+    font-weight: bold;
+    border-width: medium;
+    border-style: solid;
+    padding: 0.8rem 1rem;
+    font-size: 1rem;
+    line-height: normal;
+    overflow: hidden;
+    text-decoration: none;
+    transition: 0.5s;
+}
+
+.custom-btn1:hover {
+    color: white;
+}
+
+/*Important css for spacing and positioning*/
+.d-flex {
+    display: flex;
+    padding-top: 2rem;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+
+.para_space{
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
+.extraSpace{
+    padding-top: 4rem;
+}
+
+.extraSpace1{
+    padding-bottom: 4rem;
+}
+
+
+/*paragraph spacing
+specifically at 1920px/16=120rem
+max width at 800px/16=50rem
+*/
+@media (max-width: 120rem) {
+    .para_space {
+        max-width: 50rem;
+        margin-left: 2rem;
+        margin-right: 2rem;
+    } 
+}
+
+/*Bye-nary intro video: Youtube*/
+.video-container {
+    position: relative;
+    padding-bottom: 56.25%; /* 16:9 */
+    height: 0;
+  }
+  
+  .video-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+
+.overview-link {
+    color: white;
+    transition: background-color .5s;
+    background-color: #5A5995;
+    border-radius: 0.1rem;
+    text-decoration: none;
+    font-size: 1rem;
+    transition: 0.3s;
+    margin: 0.2rem;
+    padding: 0.3rem;
+}
+  
+.overview-link:hover {
+    background-color: #FF527D;
+    color: white;
+	font-size: 2rem;
+    transition: 0.5s;
+}
+
+/*Bye-nary logo css*/
+.flexrow1{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/*Bye-nary logo css*/
+.col-6{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/*Bye-nary Low fidelity css*/
+.center-aligned{
+    display: flex;
+    justify-content: center;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+}
+
+.byenary-link {
+    color: black;
+    font-weight: bold;
+    border-radius: 10rem;
+    border-width: medium;
+    border-color: #5A5995;
+    border-style: solid;
+    padding: 0.8rem 1rem;
+    margin-top: 1rem;
+    font-size: 1rem;
+    line-height: normal;
+    overflow: hidden;
+    text-decoration: none;
+    transition: 0.5s;
+}
+
+.byenary-link:hover {
+    color: white;
+    background: #5A5995;
+    transition: 0.5s;
+}
+
+/*Bye-nary Project css ENDS HERE*/
+
+
+/*ChuChu Project css STARTS HERE*/
+.chu-opening{
+    background-image: url('../img/chubg.svg');
+    background-position: center;
+    background-position-y: 0;
+    background-size:cover;
+    min-height: 60vh;
+    background-repeat: no-repeat;
+}
+
+.custom-btn2 {
+    color: white;
+    background: #FFC342;
+    font-weight: bold;
+    border-width: medium;
+    border-style: solid;
+    padding: 0.8rem 1rem;
+    font-size: 1rem;
+    line-height: normal;
+    overflow: hidden;
+    text-decoration: none;
+    transition: 0.5s;
+}
+
+.custom-btn2:hover {
+    color: white;
+}
+
+.website-link {
+    color: black;
+    font-weight: bold;
+    border-radius: 10rem;
+    border-width: medium;
+    border-color: #FBA12E;
+    border-style: solid;
+    padding: 0.8rem 1rem;
+    margin-top: 1rem;
+    font-size: 1rem;
+    line-height: normal;
+    overflow: hidden;
+    text-decoration: none;
+    transition: 0.5s;
+}
+
+.website-link:hover {
+    color: white;
+    background: #FBA12E;
+    transition: 0.5s;
+}
+
+/*ChuChu Project css ENDS HERE*/
+
+/*About page css STARTS HERE*/
+.contact{
+    display: flex;
+    justify-content: center;
+    font-size: 2rem;
+}
+
+.contactCard{
+    display: flex;
+    text-decoration: none;
+    color: black;
+    justify-content: center;
+}
+
+
+/*About page css ENDS HERE*/
+
+
+/*Prototype*/
+.iframeContentCenter{
+    width: 414px;
+    margin: auto;
+    border-style: none;
+    height: 100%;
+    display: block;
+}
+
+/*Footer showcase*/
+.footer{
+    padding: 2rem;
+}
+
+.footer-container{
+    display: flex;
+    justify-content: center;
+}
+
+.arrow-btn {
+    position: fixed;
+    bottom: 30px;
+    right: 30px; 
+    z-index: 9;
+}
+
+.arrow-btn a {
+    height: 39px;
+    width: 37px;
+    text-align: center;
+    background: #CDB9D5;
+    display: block;
+    border-radius: 3rem;
+    cursor: pointer;
+}
+
+.arrow-btn a span {
+    color: #474993;
+    line-height: 39px;
+    font-size: 25px;
+}
+
+.bi-chevron-up{
+    color: #FBF7F5;
+}
+
+/*Milklady css STARTS HERE*/
+/*Milklady index.html css*/
+.milkTag{
+    color: white;
+    background-color: #CDB9D5;
+    font-weight: 700;
+    border-radius: 0.1rem;
+    padding: 0.3rem 1rem;
+    margin-top: 1rem;
+}
+
+.portfolio-figure3{
+    background-color: #FBF7F5;
+    color: #101010;
+    margin-top: 5rem;
+    margin-bottom: 4rem;
+    border-radius: 2rem;
+    border: 0.2rem solid;
+    padding: 2rem;
+    box-shadow: -1rem -1rem 0px 0px #D0E7C6;
+    transition-duration: 0.3s;
+}
+
+.portfolio-figure3:hover{
+    background-color: #FBF7F5;
+    color: #101010;
+    margin-top: 5rem;
+    margin-bottom: 4rem;
+    border-radius: 2rem;
+    border: 0.2rem solid;
+    padding: 2rem;
+    box-shadow: -1rem -1rem 0px 0px #BFDCB2;
+    transition-duration: 0.5s;
+}
+
+/*Milk.html css*/
+.milk-opening{
+    background-image: url('../img/milkbg.svg');
+    background-position: center;
+    background-position-y: 0;
+    background-size:cover;
+    min-height: 60vh;
+    background-repeat: no-repeat;
+}
+
+.custom-btn3 {
+    color: white;
+    background: #CDB9D5;
+    font-weight: bold;
+    border-width: medium;
+    border-style: solid;
+    padding: 0.8rem 1rem;
+    font-size: 1rem;
+    line-height: normal;
+    overflow: hidden;
+    text-decoration: none;
+    transition: 0.5s;
+}
+
+.custom-btn3:hover {
+    color: white;
+}
+
+.milkcourse-link {
+    color: black;
+    transition: background-color .5s;
+    background-color: #D0E7C6;
+    border-radius: 0.1rem;
+    text-decoration: none;
+    font-size: 1rem;
+    transition: 0.3s;
+    margin: 0.2rem;
+    padding: 0.3rem;
+}
+  
+.milkcourse-link:hover {
+    background-color: #BFDCB2;
+    color: black;
+	font-size: 2rem;
+    transition: 0.5s;
+}
+
+.milk-link {
+    color: black;
+    font-weight: bold;
+    border-radius: 10rem;
+    border-width: medium;
+    border-color: #BFDCB2;
+    border-style: solid;
+    padding: 0.8rem 1rem;
+    margin-top: 1rem;
+    font-size: 1rem;
+    line-height: normal;
+    overflow: hidden;
+    text-decoration: none;
+    transition: 0.5s;
+}
+
+.milk-link:hover {
+    color: white;
+    background: #BFDCB2;
+    transition: 0.5s;
+}

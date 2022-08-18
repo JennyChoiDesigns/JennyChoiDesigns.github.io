@@ -1,0 +1,169 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	
+    <title>Jenny Choi's Design Portfolio</title>
+
+	<link rel="stylesheet" href="css/main.css">
+	<!--I've referenced this layout from: https://getbootstrap.com/docs/5.2/getting-started/introduction/-->
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  </head>
+  <body class="pageColor">
+
+	<!--Home: Main Navigation-->
+	<!--Reference from: https://getbootstrap.com/docs/5.2/components/navbar/-->
+	<nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
+		<div class="container px-5">
+			<a class="navbar-brand fw-bold" href="index.html">JENNY CHOI</a>
+			<button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+				Menu
+				<i class="bi-list"></i>
+			</button>
+			<div class="navbar-collapse collapse" id="navbarResponsive">
+				<ul class="navbar-nav ms-auto me-4 my-3 my-lg-0">
+					<li class="nav-item"><a class="nav-link me-lg-3" href="index.html">Home</a></li>
+					<li class="nav-item"><a class="nav-link me-lg-3" href="index.html#project">Projects</a></li>
+					<li class="nav-item"><a class="nav-link me-lg-3" href="about.html">About</a></li>
+				</ul>
+			</div>
+		</div>
+	</nav>
+
+	<!--Home intro-->
+	<!--https://getbootstrap.com/docs/5.2/layout/containers/-->
+	<section class="bg-image about full-screen d-lg-flex justify-content-center" id="about">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-7 col-md-12 col-12 d-flex align-items-center">
+                    <div>
+						<div class="introPspace2">
+							<medium>Welcome to my Design Portfolio!</medium>
+						</div>
+                        
+                        <h1>
+                            <span>Hello, I'm</span>
+							<a class="myname" href="about.html">Jenny Choi</a>
+                        </h1>
+						<h2 class="introPspace">
+                            <span>A</span>
+							<a class="myname1" href="about.html">UX + UI</a>
+							<span>,</span>
+							<a class="myname2" href="about.html">Graphic Designer</a>
+							<span>, and</span>
+							<a class="myname3" href="about.html">Illustrator</a>
+
+                        </h2>
+
+                        <p class="introPspace">
+						I'm a UX/UI designer with over four years of experience in delivering end-to-end design for website and application interfaces. 
+						I'm passionate about improving the lives of others through design and am constantly looking to learn new things everyday!
+						</p>
+                        
+                        <div class="custom-btn-group mt-4">
+                          <a href="https://drive.google.com/file/d/1KxpQrvuAzXgIlHSHGXc6DWzV5Fo2CmOp/view?usp=sharing" target="_blank" class="mr-lg-2 custom-btn"><i class='uil uil-file-alt'></i>Unlock Resume</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-5 col-md-12 col-12">
+                    <div class="about-image svg">
+                        <img src="img/me.svg" class="img-fluid homeSpace" alt="svg image">
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+	<!--Showcasing Projects in Home page with containers 
+		created a flexbox class to locate the containers in the middle
+	-->
+	<!--Referenced from: https://www.tooplate.com/view/2075-digital-team-->
+	<section class="section" id="project">
+		<div class="d-flex">
+			<h3 class="p-2 fw-bolder">Projects</h3>
+		</div>
+		<a href="bye-nary.html">
+		<div class="container">
+			<div class="Portrow">
+				<div class="col-md-4">
+					<a href="bye-nary.html" class="plinks">
+					<figure class="portfolio-figure">
+					<div class="img-wrapper">
+						<img src="img/bye-nary.png" class="img-fluid" alt="Bye-nary Project showcase">
+					</div>
+					<figcaption class="figTitle">
+						<h4>
+						Bye-Nary
+						</h4>
+						<p class="byeTag">UX + UI</p>
+					</figcaption>
+					</figure>
+					</a>
+				</div>
+			</div>
+
+			<div class="Portrow">
+				<div class="col-md-4">
+					<a href="chuchu.html" class="plinks">
+					<figure class="portfolio-figure2">
+					<div class="img-wrapper">
+						<img src="img/chuchu3.png" class="img-fluid" alt="ChuChu Project showcase">
+					</div>
+					<figcaption class="figTitle">
+						<h4>
+						ChuChu	
+						</h4>
+						<p class="chuTag">Web Dev</p>
+						<p class="byeTag">UX + UI</p>
+					</figcaption>
+					</figure>
+					</a>
+				</div>
+			</div>
+
+			<div class="Portrow">
+				<div class="col-md-4">
+					<a href="milk.html" class="plinks">
+					<figure class="portfolio-figure3">
+					<div class="img-wrapper">
+						<img src="img/milkLogo.png" class="img-fluid" alt="MilkLady Project showcase">
+					</div>
+					<figcaption class="figTitle">
+						<h4>
+						MilkLady Soap Co	
+						</h4>
+						<p class="milkTag">GRAPHIC</p>
+						<p class="byeTag">UX + UI</p>
+					</figcaption>
+					</figure>
+					</a>
+				</div>
+			</div>
+		</div>
+
+	</section>
+
+
+	<!--Footer STARTS HERE-->
+	<footer class="footer">
+		<div class="footer-container">
+		  <span class="text-muted">DESIGNED AND DEVELOPED BY JENNY</span>
+		</div>
+	</footer>
+	<!--Footer ENDS HERE-->
+
+	<!--arrow icon from: https://icons.getbootstrap.com/icons/chevron-up/-->
+	<div class="arrow-btn">
+		<a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-chevron-up" viewBox="0 0 16 16">
+			<path fill-rule="evenodd" d="M7.646 4.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1-.708.708L8 5.707l-5.646 5.647a.5.5 0 0 1-.708-.708l6-6z"/>
+		  </svg></a> 
+	</div>
+
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
