@@ -65,7 +65,7 @@ h1{
 
 /*Home Bio My name and skills in different colours*/
 .myname {
-    color: black;
+    color: white;
     background-color: #B07DAD;
     border-radius: 0.1rem;
     text-decoration: none;
@@ -570,6 +570,11 @@ max width at 800px/16=50rem
     text-decoration: none;
     color: black;
     justify-content: center;
+}
+
+.lefy{
+    padding-left: 3rem;
+    padding-right: 3rem;
 }
 
 
