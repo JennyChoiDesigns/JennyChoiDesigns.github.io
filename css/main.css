@@ -316,6 +316,57 @@ h1{
     }
 }
 
+/*Mohae css starts*/
+.portfolio-figure4{
+    background-color: #FBF7F5;
+    color: #101010;
+    margin-top: 5rem;
+    margin-bottom: 4rem;
+    border-radius: 2rem;
+    border: 0.2rem solid;
+    padding: 2rem;
+    box-shadow: -1rem -1rem 0px 0px #ffa4a4;
+    transition-duration: 0.3s;
+}
+
+.portfolio-figure4:hover{
+    background-color: #FBF7F5;
+    color: #101010;
+    margin-top: 5rem;
+    margin-bottom: 4rem;
+    border-radius: 2rem;
+    border: 0.2rem solid;
+    padding: 2rem;
+    box-shadow: -1rem -1rem 0px 0px #F98080;
+    transition-duration: 0.5s;
+}
+
+.mohae-link {
+    color: black;
+    font-weight: bold;
+    border-radius: 10rem;
+    border-width: medium;
+    border-color: #F98080;
+    border-style: solid;
+    padding: 0.8rem 1rem;
+    margin-top: 1rem;
+    font-size: 1rem;
+    line-height: normal;
+    overflow: hidden;
+    text-decoration: none;
+    transition: 0.5s;
+}
+
+.mohae-link:hover {
+    color: white;
+    background: #F98080;
+    transition: 0.5s;
+}
+
+/*Mohae ends css*/
+
+
+
 /*For ChuChu css*/
 .portfolio-figure2{
     background-color: #FBF7F5;
